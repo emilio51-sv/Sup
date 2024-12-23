@@ -1,3 +1,7 @@
+import pysqlite3
+import sys
+sys.modules['sqlite3'] = pysqlite3
+
 import streamlit as st
 from crewai import Crew, Agent, Task, Process
 from openai import OpenAI
